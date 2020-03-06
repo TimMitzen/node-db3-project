@@ -2,8 +2,7 @@
 
 module.exports = {
 
-  development: {
-    client: 'sqlite3',
+  client: 'sqlite3',
     useNullAsDefault: true, // needed for sqlite
     connection: {
       filename: './data/schemes.db3',
@@ -21,5 +20,5 @@ module.exports = {
         conn.run('PRAGMA foreign_keys = ON', done); // turn on FK enforcement
       },
     },
-  }, 
-};
+  }
+
